@@ -34,7 +34,7 @@ function MainContent(){
 				</div>
 			</div>
 			<div className="row center">
-				<a class="waves-effect waves-light btn-large black">Button</a>
+				<a class="waves-effect waves-light btn-large black">Submit</a>
 			</div>
 		</form>
 	</div>
