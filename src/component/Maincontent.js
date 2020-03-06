@@ -33,6 +33,9 @@ function MainContent(){
 					<input id="password" type="password" className="validate"></input>
 				</div>
 			</div>
+			<div className="row center">
+				<a class="waves-effect waves-light btn-large black">Button</a>
+			</div>
 		</form>
 	</div>
 	)
