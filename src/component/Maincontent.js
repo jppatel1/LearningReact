@@ -1,37 +1,85 @@
 import React from 'react';
-
+import Input from './Input'
 
 function MainContent(){
 	return(
 	<div className="container">
 		<form className="col s12">
 			<div className="row">
-				<div className="input-field col s6">
-					<h6>First Name</h6>
-					<input id="first_name" type="text" className="validate"></input>
-				</div>
-				<div className="input-field col s6">
-					<h6>Last Name</h6>
-					<input id="last_name" type="text" className="validate"></input>
-				</div>
+				<Input 
+					divClassName = "input-field col s6"
+					fieldName = "First Name"
+					inputId = "first_name" 
+					inputType = "text"
+					inputClassName = "validate"
+				/>
+				<Input 
+					divClassName = "input-field col s6"
+					fieldName = "Last Name"
+					inputId = "last_name" 
+					inputType = "text"
+					inputClassName = "validate"
+				/>
 			</div>
 			<div className="row">
-				<div className="input-field col s12">
-					<h6>Email</h6>
-					<input id="email" type="email" className="validate"></input>
-				</div>
+				<Input 
+					divClassName = "input-field col s12"
+					fieldName = "Email"
+					inputId = "email" 
+					inputType = "text"
+					inputClassName = "validate"
+				/>
 			</div>
 			<div className="row">
-				<div className="input-field col s12">
-					<h6>Confirm Email</h6>
-					<input id="Confirm-email" type="email" className="validate"></input>
-				</div>
+				<Input 
+					divClassName = "input-field col s12"
+					fieldName = "Confirm Email"
+					inputId = "confirm-email" 
+					inputType = "text"
+					inputClassName = "validate"
+				/>
 			</div>
 			<div className="row">
-				<div className="input-field col s12">
-					<h6>Password</h6>
-					<input id="password" type="password" className="validate"></input>
-				</div>
+				<Input 
+					divClassName = "input-field col s12"
+					fieldName = "Password"
+					inputId = "password" 
+					inputType = "password"
+					inputClassName = "validate"
+				/>
+			</div>
+			<div className="row">
+				<Input 
+					divClassName = "input-field col s3"
+					fieldName = "Male"
+					inputType = "radio"
+					inputClassName = "with-gap"
+					inputName ="gender"
+				/>
+				<Input 
+					divClassName = "input-field col s3"
+					inputType = "radio"
+					fieldName = "Female"
+					inputClassName = "gender"
+					inputClassName = "with-gap"
+					inputName ="gender"
+				/>
+				<Input 
+					divClassName = "input-field col s3"
+					inputType = "radio"
+					fieldName = "Other"
+					inputClassName = "gender"
+					inputClassName = "with-gap"
+					inputName ="gender"
+				/>
+				<Input 
+					divClassName = "input-field col s3"
+					inputType = "radio"
+					fieldName = "Prefer not to say"
+					inputClassName = "gender"
+					inputClassName = "with-gap"
+					inputName ="gender"
+				/>
 			</div>
 			<div className="row center">
 				<a href="#!" className="waves-effect waves-light btn-large black">Submit</a>
