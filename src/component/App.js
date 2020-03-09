@@ -1,14 +1,16 @@
 import React from 'react'
-import logo from './logo.svg'
 import './App.css'
 import Footer from './Footer'
-import Header from './Header'
 import MainContent from './Maincontent'
+import Navbar from './Navbar'
 
 function App(){
 	return(
 		<div>
-			<Header />
+			<Navbar 
+				navbarClassName="nav-wrapper black lighten-2" 
+				logoClassName="brand-logo center"
+			/>
 			<MainContent />
 			<Footer />
 		</div>
