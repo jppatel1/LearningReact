@@ -13,6 +13,7 @@ class Signup extends React.Component{
 		}
 	}
 	render(){
+	console.log(React.version)
 		return(
 			<div>
 				<Navbar 

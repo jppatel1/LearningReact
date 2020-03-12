@@ -1,5 +1,6 @@
 import React from 'react';
 import Input from './Input'
+import Button from './Button'
 
 
 class MainContent extends React.Component{
@@ -83,7 +84,11 @@ class MainContent extends React.Component{
 						/>
 					</div>
 					<div className="row center">
-						<a href="#!" className="waves-effect waves-light btn-large black">Submit</a>
+						<Button 
+							Href = "#!"
+							buttonName = "Submit"
+							className= "waves-effect waves-light btn-large black"
+						/>
 					</div>
 				</form>
 			</div>
