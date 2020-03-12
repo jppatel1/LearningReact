@@ -1,12 +1,14 @@
 import React from 'react'
 
-function Input(props){
-	return(
-		<label className={props.divClassName}>
-			<input id={props.inputId} name= {props.inputName} type={props.inputType} className={props.inputClassName}></input>
-			<span>{props.fieldName}</span>
-		</label>
-	)
+class Input extends React.Component{
+	render(){
+		return(
+			<label className={this.props.divClassName}>
+				<input id={this.props.inputId} name= {this.props.inputName} type={this.props.inputType} className={this.props.inputClassName} autocomplete ={this.props.autocomplete}></input>
+				<span className={this.props.spanClassName} data-error="wrong" data-success="right">{this.props.fieldName}</span>
+			</label>
+		)
+	}
 }
 
 
