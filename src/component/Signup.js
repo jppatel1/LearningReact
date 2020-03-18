@@ -5,6 +5,33 @@ import MainContent from './Maincontent'
 import Navbar from './Navbar'
 import Conditional from './Conditional'
 
+
+/*class Signup extends React.Component {
+	constructor(p) {
+		super(p); 
+		this.state={
+			text:''
+		}
+	}
+	
+	onChange(e) { 
+		this.setState({
+			text: e.target.value
+		}) 
+	}
+	render() {
+		return ( 
+			<div className="container">
+				<input 
+					value={this.state.text} 
+					onChange={this.onChange.bind(this)} 
+					label="hello" 
+					placeholder ="name"
+					error={this.state.text.length > 4 ? "wrong wrong" : null}/>
+			</div>
+		)
+	}
+}*/
 class Signup extends React.Component{
 	constructor(){
 		super()
