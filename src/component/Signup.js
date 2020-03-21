@@ -4,34 +4,28 @@ import Footer from './Footer'
 import MainContent from './Maincontent'
 import Navbar from './Navbar'
 import Conditional from './Conditional'
-
+import PropTypes from 'prop-types'
+import { BrowserRouter, Redirect } from 'react-router-dom'
 
 /*class Signup extends React.Component {
-	constructor(p) {
-		super(p); 
-		this.state={
-			text:''
-		}
-	}
-	
-	onChange(e) { 
-		this.setState({
-			text: e.target.value
-		}) 
-	}
-	render() {
-		return ( 
-			<div className="container">
-				<input 
-					value={this.state.text} 
-					onChange={this.onChange.bind(this)} 
-					label="hello" 
-					placeholder ="name"
-					error={this.state.text.length > 4 ? "wrong wrong" : null}/>
-			</div>
-		)
-	}
+  state = {
+    redirect: false
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      window.location = 'https://www.google.com';
+    }, 5000)
+  }
+
+  render() {
+    return (
+      <MainContent/>
+    )
+  }
 }*/
+
+
 class Signup extends React.Component{
 	constructor(){
 		super()
@@ -47,7 +41,6 @@ class Signup extends React.Component{
 			{this.state.isLoading ? 
 				<div>
 					<Navbar 
-						navbarClassName="nav-wrapper black lighten-2" 
 						logoClassName="brand-logo center"
 					/>
 					<Conditional />

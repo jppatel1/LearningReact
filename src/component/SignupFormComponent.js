@@ -165,7 +165,7 @@ export default class ValiationForm extends React.Component {
 		// let passwordError = "";
 
 		if (!this.props.data.firstName) {
-			firstNameError = "First Name cannot be blank"
+			firstNameError = "First Name field cannot be empty"
 		}
 		if(symbols.test(this.props.data.firstName) || /\d+/g.test(this.props.data.firstName)) {
 			firstNameError = "First Name cannot contain Symbols or Numbers"
