@@ -135,7 +135,8 @@ const initialState = {
 			emailError: "",
 			confirmEmailError: "",
 			passwordError: "",
-			genderError: ""
+			genderError: "",
+			confirmPasswordError : ""
 }
 
 export default class ValiationForm extends React.Component {
@@ -162,7 +163,6 @@ export default class ValiationForm extends React.Component {
 		let emailError = ""
 		let confirmEmailError = ""
 		let genderError =""
-		// let passwordError = "";
 
 		if (!this.props.data.firstName) {
 			firstNameError = "First Name field cannot be empty"
@@ -204,6 +204,9 @@ export default class ValiationForm extends React.Component {
 		if (!this.props.data.gender) {
 			genderError = "Please select gender"
 		}
+		console.log("Password is - " + this.props.data.password)
+		console.log("confirm Password is - " + this.props.data.password)
+		console.log(this.props.data.password != this.props.data.confirmPassword)
 		if(this.props.data.password != this.props.data.confirmPassword){
 			confirmPasswordError = "Password dont match"
 			console.log("went inside")
@@ -220,10 +223,6 @@ export default class ValiationForm extends React.Component {
 				genderError
 			});
 			return false;
-		}
-		else{
-			console.log("inside else")
-			//this.setDefaultState()
 		}
 
 		return true;

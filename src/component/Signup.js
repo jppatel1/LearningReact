@@ -42,6 +42,8 @@ class Signup extends React.Component{
 				<div>
 					<Navbar 
 						logoClassName="brand-logo center"
+						firstData = "hello"
+						firstHref = "#!"
 					/>
 					<Conditional />
 					<Footer />
